@@ -2,8 +2,8 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 
 
-from .registry_client.service_registry_client import ServiceRegistryClient
-from .registry_client.service_registry_client import AbstractServiceRegistryClient
+from registry_client.service_registry_client import ServiceRegistryClient
+from registry_client.service_registry_client import AbstractServiceRegistryClient
 import os
 
 """
