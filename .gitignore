@@ -1,0 +1,6 @@
+service_client/__pycache__/
+service_client/db/__pycache__/
+service_client/db/persistence_clients/__pycache__/
+service_client/service_registry_factory/__pycache__/
+service_client/service_registry_factory/registry_client/__pycache__/
+.idea/
