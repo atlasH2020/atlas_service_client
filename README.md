@@ -10,6 +10,6 @@ pip install -e git+https://github.com/atlasH2020/atlas_registry_client.git#egg=r
 
 ## Getting started
 
-The service client can be used in an ATLAS enabled software system with a simple pip install command as follows:
+The service client library can be used in an ATLAS enabled software system with a simple pip install command as follows:
 
 pip install -e git+https://github.com/atlasH2020/atlas_service_client.git#egg=service_client
