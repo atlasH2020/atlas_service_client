@@ -71,6 +71,10 @@ class AbstractServiceClientPersistence(ABC):
         pass
 
     @abstractmethod
+    def delete_user_services_by_service_id(self, service_id):
+        pass
+
+    @abstractmethod
     def delete_service_from_user_services(self, user_token_id):
         pass
 
@@ -140,6 +144,10 @@ class DummyServiceClientPersistence(AbstractServiceClientPersistence):
                         'And set it in the service client.')
 
     def get_user_services(self, user_id, service_name):
+        raise Exception('This is just a dummy persistence. You need to implement your own persistence client.'
+                        'And set it in the service client.')
+
+    def delete_user_services_by_service_id(self, service_id):
         raise Exception('This is just a dummy persistence. You need to implement your own persistence client.'
                         'And set it in the service client.')
 

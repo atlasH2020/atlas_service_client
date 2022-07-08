@@ -205,7 +205,7 @@ class ServiceClient(AbstractServiceClient):
 
             if err_res['error'] == 'invalid_grant':
                 print('token not active, initiate service pairing')
-                self.service_client_persistence.delete_service_from_user_services(self.service_id)
+                self.service_client_persistence.delete_user_services_by_service_id(self.service_id)
                 self.pair_service()
                 return None
 
