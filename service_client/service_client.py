@@ -140,9 +140,9 @@ class ServiceClient(AbstractServiceClient):
 
     def service_endpoint_authentication(self):
         print('initiate service pairing...')
-        if not self.service_info['enabled']:
-            print('ERROR: service is not enabled')
-            return None
+        #if not self.service_info['enabled']:
+        #    print('ERROR: service is not enabled')
+        #    return None
         self.trigger_oauth2_authorization_code_flow()
 
     def trigger_oauth2_authorization_code_flow(self):
